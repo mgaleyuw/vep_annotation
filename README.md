@@ -1,5 +1,7 @@
 # VEP THING
 
+I've edited this file and I want to save it.
+
 A phenotype annotation tool for filtered vep output or any other type of comma separated values that include a genomic position. Uses RMarkdown to generate an HTML file with an interactive table of variants that are likely to be pathogenic, organized into priority tiers. Also returns the original input file with OMIM phenotypes and error-prone regions flagged.
 
 This is highly tuned for the output of the Miller lab's internal use of VEP and the specific set of annotation datasets that we use. See the supplemental scripts (`/supplemental`) for what tools are used and what downstream processing is performed before running this tool. It almost certainly will not work with other configurations of VEP or without running the downstream processing tool to filter low quality variants and process the VCF into a .csv. Special care should be taken in the treatment of multiallelic variants.
