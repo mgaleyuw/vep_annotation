@@ -1,0 +1,82 @@
+1 total starting variants
+0 coding variants
+-0 with no mapping issues, homopolymers, repeats, or segdups
+--0 with OMIM record
+---0 with known pathogenic variant
+---0 with VUS
+----0 with dominant inheritance
+----0 with recessive inheritance
+----0 homozygous
+----0 with heterozygous compound inheritance
+--0 with strongly predicted pathogenicity
+--0 with some predicted pathogenicity
+----0 with dominant inheritance
+----0 with recessive inheritance
+----0 homozygous
+----0 with heterozygous compound inheritance
+---0 with known pathogenic variant
+--0 with QUAL > 10, not multiallelic
+--0 with CADD (phred) >= 30, not multiallelic
+---0 with high impact
+--0 without OMIM record
+---0 with known pathogenic variant
+---0 with VUS
+--0 with strongly predicted pathogenicity
+--0 with some predicted pathogenicity
+--0 with QUAL > 10, not multiallelic
+----0 homozygous
+----0 heterozygous
+----0 with heterozygous compound inheritance
+-----0 with haplosensitivity score >= 0.86
+-0 with any flagged issue
+--0 with QUAL > 10, not multiallelic
+--0 with OMIM record
+---0 with known pathogenic variant
+---0 with VUS
+----0 with dominant inheritance
+----0 with recessive inheritance
+----0 homozygous
+----0 with heterozygous compound inheritance
+--0 with strongly predicted pathogenicity
+--0 with some predicted pathogenicity
+----0 with dominant inheritance
+----0 with recessive inheritance
+----0 homozygous
+----0 with heterozygous compound inheritance
+---0 with known pathogenic variant
+--0 with QUAL > 10, not multiallelic
+--0 with CADD (phred) >= 30, not multiallelic
+---0 with high impact
+--0 without OMIM record
+---0 with known pathogenic variant
+---0 with VUS
+--0 with strongly predicted pathogenicity
+--0 with some predicted pathogenicity
+--0 with QUAL > 10, not multiallelic
+----0 homozygous
+----0 heterozygous
+----0 with heterozygous compound inheritance
+-----0 with haplosensitivity score >= 0.86
+0 non coding variants (excluding stops, frameshifts, missense, lost starts)
+-0 with no mapping issues, homopolymers, repeats, or segdups
+--0 with probable splice variant
+--0 with OMIM record
+--0 with no spliceAI scores
+---0 with high impact
+--0 with OMIM record
+---0 with CADD greater than 20
+--0 with OMIM record
+-0 with any flagged issue
+--0 with QUAL > 10, not multiallelic
+--0 with probable splice variant
+--0 with OMIM record
+--0 with no spliceAI scores
+---0 with high impact
+--0 with OMIM record
+---0 with CADD greater than 20
+--0 with OMIM record
+----0 with dominant inheritance
+----0 with recessive inheritance
+----0 homozygous
+----0 with heterozygous compound inheritance
+0 variants in final output
