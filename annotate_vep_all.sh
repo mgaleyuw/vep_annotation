@@ -24,6 +24,9 @@ while getopts "i:o:q:d:T:" option; do
   esac
 done
 
+echo "adding OMIM annotations"
+echo ""
+
 bash annotate_omim.sh -i $FILE -o $TEMPLOC/temp.csv
 
 declare -A annotationFiles
@@ -38,10 +41,14 @@ annotationFiles["Homopolymers"]=/n/dat/annotationData/catted.ok.homopolymer.sort
 keys=( "Mappability" "GRCExclusions" "Repeats" "UCSC_Unusual" "SegmentalDuplications" "Homopolymers" )
 for key in ${keys[@]}
 do
+    echo "adding $key annotations"
+    echo ""
     bash annotate_vep_with_bed.sh -i $TEMPLOC/temp.csv -o $TEMPLOC/temp2.csv -a ${annotationFiles[$key]} -n $key
     mv $TEMPLOC/temp2.csv $TEMPLOC/temp.csv
 done
 
+echo "prioritizing variants"
+echo ""
 bash prioritizeVep.sh -i $TEMPLOC/temp.csv -o ${OUTPUT%*.csv} -c -q $CLAIRQUALITY -d $MINIMUMDEPTH
 mv $TEMPLOC/temp.csv $OUTPUT
 
