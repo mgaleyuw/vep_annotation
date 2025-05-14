@@ -91,6 +91,8 @@ df$SpliceAI_pred_DS_AL <- as.numeric(df$SpliceAI_pred_DS_AL)
 df$SpliceAI_pred_DS_DG <- as.numeric(df$SpliceAI_pred_DS_DG)
 df$SpliceAI_pred_DS_DL <- as.numeric(df$SpliceAI_pred_DS_DL)
 df$gnomADg_AF <- as.numeric(df$gnomADg_AF)
+
+df <- df  %>% arrange(priority, IGV) %>% distinct(IGV, Gene, .keep_all=TRUE)
 ```
 
 ```{r annotateVars, message=FALSE, warning=FALSE, include=FALSE}

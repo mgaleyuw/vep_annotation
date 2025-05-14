@@ -40,7 +40,9 @@ Required flags:
 
 Options:
     - `-q`: For variants detected in regions with homopolymers, segmental duplications, simple repeats, blacklisted ENCODE regions, or GRC exclusions, quality must be above this threshold to be considered as a reportable variant (default of 20.0)
+
     - `d` : The minimum allelic depth of an ALT allele that should be considered as a reportable variant (default of 4)
+
 
 ## Example and Details
 
