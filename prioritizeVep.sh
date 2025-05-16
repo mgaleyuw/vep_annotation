@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # the g6* model of clair should use a quality threshold around 10. dorado trained models should use a cutoff of 20.
+# expected input for hiddenseq branch includes an extra column, whitelist
 
 CLEAN=0
 QUALTHRESH=20

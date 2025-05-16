@@ -17,6 +17,7 @@ div.main-container {
 
 
 ```{r loadlibraries, message=FALSE, warning=FALSE, include=FALSE}
+# 2025-05-14 expected input for hiddenseq branch includes an extra column, whitelist
 
 vepfile=params$vepfile
 LOGFILE=params$logfile
