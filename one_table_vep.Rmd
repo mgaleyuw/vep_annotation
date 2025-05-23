@@ -262,6 +262,7 @@ M1926=readLines("panels/M1926_targets.txt")
 glycogenstring=readLines("panels/glycogen_storage_disease.txt")
 metabolismstring=readLines("panels/likely_inborn_error_of_metabolism.txt")
 lysosomalstring=readLines("panels/lysosomal_storage_disorder.txt")
+braintumorstring=readLines("panels/rapid_brain_tumor_classification.txt")
 ```
 
 
@@ -297,6 +298,7 @@ M1926_targets <- strsplit(M1926, "-")[[1]]
 glycogen_panel <- strsplit(glycogenstring, "-")[[1]]
 metabolicdisorder_panel <- strsplit(metabolismstring, "-")[[1]]
 lysosomal_panel <- strsplit(lysosomalstring, "-")[[1]]
+rapid_brain_panel <- strsplit(braintumorstring, "-")[[1]]
 ```
 
 
@@ -336,7 +338,7 @@ bscols(widths=c(1,2,NA),
              filter_checkbox("noonan_panel", "Multisystem Panels", shared_df, ~(case_match(SYMBOL, noonan_panel ~ "Noonan Syndrome"))),
              filter_checkbox("rett_panel", "", shared_df, ~(case_match(SYMBOL, rett_panel ~ "Rett/Angelman Syndrome"))),
              filter_checkbox("tuber_panel", "", shared_df, ~(case_match(SYMBOL, tuber_panel ~ "Tuberous Sclerosis"))),
-             filter_checkbox("M1926_targets", "Adaptive Sampling Targets", shared_df, ~(case_match(SYMBOL, M1926_targets ~ "NSC0150_Sunny Expanded Targets")))
+             filter_checkbox("rapid_brain_panel", "Rapid Brain Tumor Classification Targets", shared_df, ~(case_match(SYMBOL, rapid_brain_panel ~ "Rapid Brain Tumor Classification AS")))
              ),
        
        reactable(shared_df,
